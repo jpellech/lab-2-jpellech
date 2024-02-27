@@ -1,17 +1,16 @@
 Jacob Pellechia
-
+T01383903
 
 #! /bin/bash
 
-curl https://github.com/torvalds/linux/archive/refs/tags/v6.4.tar.gz | tar .
+curl -L https://github.com/torvalds/linux/archive/refs/tags/v6.4.tar.gz | tar -zx
 
 
-
-  12127 c
-   9032 h
-   1974 rst
-   1787 dts
-   1552 dtsi
-    802 yaml
-    487 txt
-     90 S
+  32463 c
+  23745 h
+   3488 yaml
+   3339 rst
+   2710 dts
+   2030 dtsi
+   1854 txt
+   1343 S
