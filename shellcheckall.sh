@@ -10,7 +10,7 @@ fi
 
 if [[ $# -eq 1 ]]; then
     while IFS= read -r -d $'\0' file; do 
-        if shellcheck "$file"; then
+        if shellcheck "$file" &> /dev/null; then
             correctcount=$((correctcount+1))
         fi
         totalcount=$((totalcount+1))
@@ -19,7 +19,7 @@ fi
 
 if [[ $# -eq 0 ]]; then
     while IFS= read -r -d $'\0' file; do
-        if shellcheck "$file"; then
+        if shellcheck "$file" &> /dev/null; then
             correctcount=$((correctcount+1))
         fi
         totalcount=$((totalcount+1))
